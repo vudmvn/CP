@@ -1,0 +1,14 @@
+# Temporary & Compiler Artifacts
+*.log
+*.aux
+*.out
+*.tmp
+__temp_*
+__pycache__/
+*.pyc
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
