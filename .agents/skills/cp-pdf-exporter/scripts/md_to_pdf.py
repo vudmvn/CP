@@ -93,7 +93,7 @@ def preprocess_markdown(md_text, base_dir, repo_root):
         current_img_line = []
 
         for l in lines:
-            if '<img' in l or l.startswith('&nbsp;'):
+            if '<img' in l or '<a' in l or l.startswith('&nbsp;'):
                 current_img_line.append(l)
             else:
                 if current_img_line:

@@ -69,11 +69,11 @@
 
 <div align="center">
 
-<img src="../../assets/logos/NEU_Logo.png" alt="NEU Logo" height="50" />
+<a href="https://www.neu.edu.vn" target="_blank"><img src="../../assets/logos/NEU_Logo.png" alt="NEU Logo" height="50" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="../../assets/logos/FDA_Logo.png" alt="FDA Logo" height="50" />
+<a href="https://www.fda.neu.edu.vn" target="_blank"><img src="../../assets/logos/FDA_Logo.png" alt="FDA Logo" height="50" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="../../assets/logos/SLSCM_logo.jpg" alt="SLSCM Logo" height="50" />
+<a href="https://www.facebook.com/slscm.lab" target="_blank"><img src="../../assets/logos/SLSCM_logo.jpg" alt="SLSCM Logo" height="50" /></a>
 
 <br/><br/>
 
