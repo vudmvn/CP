@@ -32,6 +32,7 @@ Tất cả các tài liệu dưới đây đã được biên dịch hoàn tất
 | 7 | **Ước chung lớn nhất (GCD) & Bội chung nhỏ nhất (LCM)** | [📖 `theory.pdf`](./One-star/gcd-lcm/theory.pdf) | [🎯 `problems.pdf`](./One-star/gcd-lcm/problems.pdf) | [💻 `template.cpp`](./One-star/gcd-lcm/template.cpp) |
 | 8 | **Số chính phương & Square-Free Numbers** | [📖 `theory.pdf`](./One-star/square-numbers/theory.pdf) | [🎯 `problems.pdf`](./One-star/square-numbers/problems.pdf) | [💻 `template.cpp`](./One-star/square-numbers/template.cpp) |
 | 9 | **Toán học Nền tảng & Đại số Rời rạc** | [📖 `theory.pdf`](./One-star/basic-math/theory.pdf) | [🎯 `problems.pdf`](./One-star/basic-math/problems.pdf) | [💻 `template.cpp`](./One-star/basic-math/template.cpp) |
+| 10 | **Tìm kiếm nhị phân & Tìm kiếm tam phân** | [📖 `theory.pdf`](./One-star/binary-search/theory.pdf) | [🎯 `problems.pdf`](./One-star/binary-search/problems.pdf) | [💻 `template.cpp`](./One-star/binary-search/template.cpp) |
 
 ---
 
@@ -39,7 +40,6 @@ Tất cả các tài liệu dưới đây đã được biên dịch hoàn tất
 
 | Cấp độ | Chuyên đề | Trạng thái tài liệu |
 | :---: | :--- | :---: |
-| ⭐ One-star | Tìm kiếm nhị phân & Chặt nhị phân kết quả | ⏳ Đang biên soạn |
 | ⭐ One-star | Cấu trúc dữ liệu nền tảng (DSU, Monotonic Stack/Queue) | ⏳ Đang biên soạn |
 | ⭐ One-star | Đồ thị cơ bản (BFS/DFS, Dijkstra, Kruskal) | ⏳ Đang biên soạn |
 | ⭐ One-star | Quy hoạch động cơ bản (Knapsack, LIS, Grid DP) | ⏳ Đang biên soạn |

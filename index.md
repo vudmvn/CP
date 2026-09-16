@@ -15,7 +15,7 @@
 
 | Cấp độ | Định hướng kỳ thi | Đã hoàn thiện | Dự kiến | Trạng thái |
 | :---: | :--- | :---: | :---: | :---: |
-| ⭐ **One-star** | Nền tảng ICPC, Vòng loại trường, OLP Không chuyên | **9** | 14 | 🟡 Đang hoàn thiện |
+| ⭐ **One-star** | Nền tảng ICPC, Vòng loại trường, OLP Không chuyên | **10** | 14 | 🟡 Đang hoàn thiện |
 | ⭐⭐ **Two-star** | ICPC National, ICPC Regional Mid, OLP Chuyên Tin | **0** | 10 | ⏳ Lên kế hoạch |
 | ⭐⭐⭐ **Three-star** | ICPC Regional Hard, World Finals, OLP Siêu Cúp | **0** | 8 | ⏳ Lên kế hoạch |
 
@@ -43,7 +43,7 @@ Mỗi chuyên đề trong repo được chuẩn hóa thống nhất theo **Bộ 
 | 7 | [**Ước chung lớn nhất (GCD) & Bội chung nhỏ nhất (LCM)**](./One-star/gcd-lcm/) | [theory.md](./One-star/gcd-lcm/theory.md) | [template.cpp](./One-star/gcd-lcm/template.cpp) | [16 bài](./One-star/gcd-lcm/problems.md) | ✅ Hoàn thành |
 | 8 | [**Số chính phương & Square-Free Numbers**](./One-star/square-numbers/) | [theory.md](./One-star/square-numbers/theory.md) | [template.cpp](./One-star/square-numbers/template.cpp) | [16 bài](./One-star/square-numbers/problems.md) | ✅ Hoàn thành |
 | 9 | [**Toán học Nền tảng & Đại số Rời rạc**](./One-star/basic-math/) | [theory.md](./One-star/basic-math/theory.md) | [template.cpp](./One-star/basic-math/template.cpp) | [16 bài](./One-star/basic-math/problems.md) | ✅ Hoàn thành |
-| 10 | **Tìm kiếm nhị phân & Chặt nhị phân kết quả** | — | — | — | ⏳ Sắp có |
+| 10 | [**Tìm kiếm nhị phân & Tìm kiếm tam phân**](./One-star/binary-search/) | [theory.md](./One-star/binary-search/theory.md) | [template.cpp](./One-star/binary-search/template.cpp) | [16 bài](./One-star/binary-search/problems.md) | ✅ Hoàn thành |
 | 11 | **Cấu trúc dữ liệu nền tảng (DSU, Monotonic)** | — | — | — | ⏳ Sắp có |
 | 12 | **Đồ thị cơ bản (BFS/DFS, Dijkstra, Kruskal)** | — | — | — | ⏳ Sắp có |
 | 13 | **Quy hoạch động cơ bản (Knapsack, LIS, Grid)** | — | — | — | ⏳ Sắp có |
