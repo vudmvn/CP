@@ -15,7 +15,7 @@
 
 | Cấp độ | Định hướng kỳ thi | Đã hoàn thiện | Dự kiến | Trạng thái |
 | :---: | :--- | :---: | :---: | :---: |
-| ⭐ **One-star** | Nền tảng ICPC, Vòng loại trường, OLP Không chuyên | **10** | 14 | 🟡 Đang hoàn thiện |
+| ⭐ **One-star** | Nền tảng ICPC, Vòng loại trường, OLP Không chuyên | **20** | 24 | 🟡 Đang hoàn thiện |
 | ⭐⭐ **Two-star** | ICPC National, ICPC Regional Mid, OLP Chuyên Tin | **0** | 10 | ⏳ Lên kế hoạch |
 | ⭐⭐⭐ **Three-star** | ICPC Regional Hard, World Finals, OLP Siêu Cúp | **0** | 8 | ⏳ Lên kế hoạch |
 
@@ -33,7 +33,7 @@ Mỗi chuyên đề trong repo được chuẩn hóa thống nhất theo **Bộ 
 ### ⭐ One-star: Nền tảng & Khởi động ICPC
 
 | STT | Chuyên đề | Bài giảng & Lý thuyết | Template C++20 | Tuyển tập bài tập | Trạng thái |
-| :---: | :--- | :---: | :---: | :---: | :---: |
+| :---: | :--- | :---: | :---: | :---: | :--- |
 | 1 | [**Số học Modulo & Nghịch đảo**](./One-star/modulo/) | [theory.md](./One-star/modulo/theory.md) | [template.cpp](./One-star/modulo/template.cpp) | [18 bài](./One-star/modulo/problems.md) | ✅ Hoàn thành |
 | 2 | [**Đệ quy & Thuật toán Quay lui**](./One-star/recursion-backtracking/) | [theory.md](./One-star/recursion-backtracking/theory.md) | [template.cpp](./One-star/recursion-backtracking/template.cpp) | [14 bài](./One-star/recursion-backtracking/problems.md) | ✅ Hoàn thành |
 | 3 | [**Sàng số nguyên tố & Thừa số nguyên tố**](./One-star/sieve-primes/) | [theory.md](./One-star/sieve-primes/theory.md) | [template.cpp](./One-star/sieve-primes/template.cpp) | [16 bài](./One-star/sieve-primes/problems.md) | ✅ Hoàn thành |
@@ -44,10 +44,20 @@ Mỗi chuyên đề trong repo được chuẩn hóa thống nhất theo **Bộ 
 | 8 | [**Số chính phương & Square-Free Numbers**](./One-star/square-numbers/) | [theory.md](./One-star/square-numbers/theory.md) | [template.cpp](./One-star/square-numbers/template.cpp) | [16 bài](./One-star/square-numbers/problems.md) | ✅ Hoàn thành |
 | 9 | [**Toán học Nền tảng & Đại số Rời rạc**](./One-star/basic-math/) | [theory.md](./One-star/basic-math/theory.md) | [template.cpp](./One-star/basic-math/template.cpp) | [16 bài](./One-star/basic-math/problems.md) | ✅ Hoàn thành |
 | 10 | [**Tìm kiếm nhị phân & Tìm kiếm tam phân**](./One-star/binary-search/) | [theory.md](./One-star/binary-search/theory.md) | [template.cpp](./One-star/binary-search/template.cpp) | [16 bài](./One-star/binary-search/problems.md) | ✅ Hoàn thành |
-| 11 | **Cấu trúc dữ liệu nền tảng (DSU, Monotonic)** | — | — | — | ⏳ Sắp có |
-| 12 | **Đồ thị cơ bản (BFS/DFS, Dijkstra, Kruskal)** | — | — | — | ⏳ Sắp có |
-| 13 | **Quy hoạch động cơ bản (Knapsack, LIS, Grid)** | — | — | — | ⏳ Sắp có |
-| 14 | **Xử lý xâu cơ bản & Đếm phân phối** | — | — | — | ⏳ Sắp có |
+| 11 | [**Phép toán Bit & Cấu trúc dữ liệu Bitset**](./One-star/bit-manipulation/) | [theory.md](./One-star/bit-manipulation/theory.md) | [template.cpp](./One-star/bit-manipulation/template.cpp) | [16 bài](./One-star/bit-manipulation/problems.md) | ✅ Hoàn thành |
+| 12 | [**Lũy thừa nhị phân & Nhân ma trận**](./One-star/matrix-exponentiation/) | [theory.md](./One-star/matrix-exponentiation/theory.md) | [template.cpp](./One-star/matrix-exponentiation/template.cpp) | [16 bài](./One-star/matrix-exponentiation/problems.md) | ✅ Hoàn thành |
+| 13 | [**Thuật toán Sắp xếp & Nghịch thế**](./One-star/sorting-algorithms/) | [theory.md](./One-star/sorting-algorithms/theory.md) | [template.cpp](./One-star/sorting-algorithms/template.cpp) | [16 bài](./One-star/sorting-algorithms/problems.md) | ✅ Hoàn thành |
+| 14 | [**Ngăn xếp & Ngăn xếp Đơn điệu**](./One-star/monotonic-stack/) | [theory.md](./One-star/monotonic-stack/theory.md) | [template.cpp](./One-star/monotonic-stack/template.cpp) | [16 bài](./One-star/monotonic-stack/problems.md) | ✅ Hoàn thành |
+| 15 | [**Danh sách Liên kết & Cấu trúc Động**](./One-star/linked-list/) | [theory.md](./One-star/linked-list/theory.md) | [template.cpp](./One-star/linked-list/template.cpp) | [16 bài](./One-star/linked-list/problems.md) | ✅ Hoàn thành |
+| 16 | [**Tập hợp, Ánh xạ & Cây BST Cân bằng**](./One-star/set-map-bst/) | [theory.md](./One-star/set-map-bst/theory.md) | [template.cpp](./One-star/set-map-bst/template.cpp) | [16 bài](./One-star/set-map-bst/problems.md) | ✅ Hoàn thành |
+| 17 | [**Hàng đợi, Deque & Monotonic Queue**](./One-star/queue-deque/) | [theory.md](./One-star/queue-deque/theory.md) | [template.cpp](./One-star/queue-deque/template.cpp) | [16 bài](./One-star/queue-deque/problems.md) | ✅ Hoàn thành |
+| 18 | [**Hàng đợi Ưu tiên & Cấu trúc Đống (Heap)**](./One-star/priority-queue-heap/) | [theory.md](./One-star/priority-queue-heap/theory.md) | [template.cpp](./One-star/priority-queue-heap/template.cpp) | [16 bài](./One-star/priority-queue-heap/problems.md) | ✅ Hoàn thành |
+| 19 | [**Kỹ thuật Băm & Phòng chống Anti-Hash**](./One-star/hashing-techniques/) | [theory.md](./One-star/hashing-techniques/theory.md) | [template.cpp](./One-star/hashing-techniques/template.cpp) | [16 bài](./One-star/hashing-techniques/problems.md) | ✅ Hoàn thành |
+| 20 | [**Chiến lược Thuật toán: Phân rã & Quy đổi**](./One-star/problem-reduction/) | [theory.md](./One-star/problem-reduction/theory.md) | [template.cpp](./One-star/problem-reduction/template.cpp) | [16 bài](./One-star/problem-reduction/problems.md) | ✅ Hoàn thành |
+| 21 | **Cấu trúc Dữ liệu Rời rạc (Disjoint Set Union - DSU)** | — | — | — | ⏳ Sắp có |
+| 22 | **Đồ thị cơ bản (BFS/DFS, Dijkstra, Kruskal)** | — | — | — | ⏳ Sắp có |
+| 23 | **Quy hoạch động cơ bản (Knapsack, LIS, Grid)** | — | — | — | ⏳ Sắp có |
+| 24 | **Xử lý xâu cơ bản & Đếm phân phối** | — | — | — | ⏳ Sắp có |
 
 ---
 

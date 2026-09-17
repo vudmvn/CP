@@ -323,6 +323,66 @@ long long ternary_search_integer(long long low, long long high) {
 }
 ```
 
+### 3.3. Kỹ thuật nâng cao: Chuyển Ternary Search rời rạc về Binary Search trên hàm hiệu $\Delta f(k)$
+Khi giải các bài toán trên **miền số nguyên $\mathbb{Z}$**, việc cài đặt Ternary Search thường dài dòng và tiềm ẩn bẫy chia nguyên. Nếu hàm $f(k)$ có tính chất **đơn đỉnh ngặt (Strictly Unimodal)** (không có các đoạn bằng phẳng liên tiếp $f(k) = f(k+1) = \dots$), ta có thể **chuyển bài toán tìm cực trị về Chặt nhị phân thông thường** bằng cách so sánh $f(k)$ và $f(k+1)$!
+
+#### Cơ sở toán học: Tính đơn điệu của hàm hiệu (Đạo hàm rời rạc)
+Xét bài toán tìm **Cực đại** trên đoạn $[L, R]$. Định nghĩa hàm hiệu rời rạc $\Delta f(k) = f(k+1) - f(k)$ và ánh xạ sang điều kiện Boolean:
+$$P(k) = [f(k) < f(k+1)]$$
+
+- Khi $k$ nằm ở sườn dốc tăng (bên trái đỉnh cực đại $k^*$): $f(k) < f(k+1) \implies P(k) = \text{true}$.
+- Khi $k$ đạt đỉnh hoặc sang sườn dốc giảm (từ đỉnh $k^*$ sang phải): $f(k) \ge f(k+1) \implies P(k) = \text{false}$.
+
+Dãy giá trị $P(k)$ có tính **đơn điệu hoàn hảo**:
+$$\underbrace{\text{true}, \ \text{true}, \ \dots, \ \text{true}}_{\text{Sườn tăng: } k < k^*}, \quad \underbrace{\text{false}, \ \text{false}, \ \dots, \ \text{false}}_{\text{Sườn giảm: } k \ge k^*}$$
+
+Do đó, đỉnh cực đại $k^*$ chính là **vị trí đầu tiên có $P(k) = \text{false}$** (hoặc vị trí cuối cùng có $P(k) = \text{true}$ cộng thêm 1).
+
+#### So sánh hiệu năng vượt trội
+
+| Tiêu chí | Ternary Search rời rạc ($m_1, m_2$) | Binary Search so sánh $f(k) < f(k+1)$ |
+| :--- | :--- | :--- |
+| **Thu hẹp mỗi bước** | Thu hẹp $\frac{2}{3}$ không gian còn lại | Thu hẹp $\frac{1}{2}$ không gian còn lại (nhanh hơn) |
+| **Số lần gọi hàm $f$** | $\approx 2 \log_{1.5}(N) \approx \mathbf{4.93 \ln N}$ | $\approx 2 \log_2(N) \approx \mathbf{2.88 \ln N}$ (**nhanh hơn ~42%**) |
+| **Xử lý biên** | Phải dừng sớm $R - L \le 4$ rồi quét tuyến tính | **Cực sạch, không bao giờ rơi vào vòng lặp vô hạn** |
+| **Độ phức tạp code** | ~20 dòng | **~7 dòng ngắn gọn** |
+
+#### Cài đặt mẫu C++20:
+```cpp
+// 1. Tìm điểm k* trong [L, R] để f(k*) đạt CỰC ĐẠI
+long long find_max_unimodal(long long L, long long R) {
+    long long low = L, high = R - 1, best = L;
+    while (low <= high) {
+        long long mid = low + (high - low) / 2;
+        if (f(mid) < f(mid + 1)) {
+            best = mid + 1; // Đang tăng -> cực đại nằm từ mid + 1 trở đi
+            low = mid + 1;
+        } else {
+            high = mid - 1; // Đang giảm -> cực đại nằm ở mid hoặc phía trước
+        }
+    }
+    return best;
+}
+
+// 2. Tìm điểm k* trong [L, R] để f(k*) đạt CỰC TIỂU (đảo điều kiện f(mid) > f(mid + 1))
+long long find_min_unimodal(long long L, long long R) {
+    long long low = L, high = R - 1, best = L;
+    while (low <= high) {
+        long long mid = low + (high - low) / 2;
+        if (f(mid) > f(mid + 1)) {
+            best = mid + 1; // Đang giảm -> cực tiểu nằm từ mid + 1 trở đi
+            low = mid + 1;
+        } else {
+            high = mid - 1; // Đang tăng -> cực tiểu nằm ở mid hoặc phía trước
+        }
+    }
+    return best;
+}
+```
+
+> [!WARNING]
+> **Điều kiện bắt buộc:** Phương pháp này yêu cầu hàm phải **đơn đỉnh ngặt (Strictly Unimodal)**. Nếu hàm xuất hiện các đoạn nằm ngang bằng phẳng ($f(k) = f(k+1) = f(k+2)$), tính đơn điệu của điều kiện boolean bị phá vỡ và thuật toán có thể trả về sai kết quả.
+
 ---
 
 # ⚠️ PHẦN V: 7 CẠM BẪY PHÒNG THI & LỖI NGỚ NGẨN (COMMON PITFALLS)

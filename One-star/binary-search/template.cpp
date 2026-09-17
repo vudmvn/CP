@@ -187,6 +187,26 @@ namespace TernarySearch {
         return best_x;
     }
 
+    /**
+     * @brief Tìm cực trị hàm đơn đỉnh rời rạc bằng Binary Search trên hàm hiệu f(k) < f(k+1)
+     * Ưu điểm: Nhanh hơn Ternary Search (~2.88 ln N so với ~4.93 ln N), code ngắn gọn, không lo bẫy chia nguyên.
+     * Yêu cầu bắt buộc: Hàm f phải đơn đỉnh NGẶT (Strictly Unimodal), không có đoạn bằng phẳng.
+     */
+    long long binarySearchUnimodalDiscrete(long long low, long long high, const function<long long(long long)>& f, bool findMax = true) {
+        long long l = low, r = high - 1, best = low;
+        while (l <= r) {
+            long long mid = l + (r - l) / 2;
+            bool condition = findMax ? (f(mid) < f(mid + 1)) : (f(mid) > f(mid + 1));
+            if (condition) {
+                best = mid + 1; // Đi theo chiều dốc tiến tới cực trị
+                l = mid + 1;
+            } else {
+                r = mid - 1;
+            }
+        }
+        return best;
+    }
+
 } // namespace TernarySearch
 
 int main() {
@@ -211,13 +231,21 @@ int main() {
     long long sqrtN = BinarySearch::firstTrue(1, 2000000, pred);
     cout << "Căn bậc hai nguyên đầu tiên của " << N << " là: " << sqrtN << "\n\n";
 
-    // 3. Kiểm thử Tìm kiếm Tam phân: Tìm cực đại của hàm parabol f(x) = -(x - 42)^2 + 100
+    // 3. Kiểm thử Tìm kiếm Tam phân liên tục: Parabol f(x) = -(x - 42)^2 + 100
     auto parabola = [](double x) {
         return -(x - 42.0) * (x - 42.0) + 100.0;
     };
     double peak_x = TernarySearch::realTernarySearch(0.0, 100.0, parabola, true);
     cout << fixed << setprecision(6);
-    cout << "Cực đại Parabola đạt tại x = " << peak_x << " với f(x) = " << parabola(peak_x) << "\n";
+    cout << "Cực đại Parabola liên tục tại x = " << peak_x << " với f(x) = " << parabola(peak_x) << "\n";
+
+    // 4. Kiểm thử Binary Search tìm cực đại rời rạc: g(k) = -(k - 77)^2 + 500
+    auto discrete_f = [](long long k) -> long long {
+        return -(k - 77) * (k - 77) + 500;
+    };
+    long long peak_k = TernarySearch::binarySearchUnimodalDiscrete(0, 1000, discrete_f, true);
+    cout << "Cực đại hàm rời rạc bằng BS đạo hàm tại k = " << peak_k 
+         << " với f(k) = " << discrete_f(peak_k) << "\n";
 
     return 0;
 }

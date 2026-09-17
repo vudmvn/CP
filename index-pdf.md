@@ -33,6 +33,16 @@ Tất cả các tài liệu dưới đây đã được biên dịch hoàn tất
 | 8 | **Số chính phương & Square-Free Numbers** | [📖 `theory.pdf`](./One-star/square-numbers/theory.pdf) | [🎯 `problems.pdf`](./One-star/square-numbers/problems.pdf) | [💻 `template.cpp`](./One-star/square-numbers/template.cpp) |
 | 9 | **Toán học Nền tảng & Đại số Rời rạc** | [📖 `theory.pdf`](./One-star/basic-math/theory.pdf) | [🎯 `problems.pdf`](./One-star/basic-math/problems.pdf) | [💻 `template.cpp`](./One-star/basic-math/template.cpp) |
 | 10 | **Tìm kiếm nhị phân & Tìm kiếm tam phân** | [📖 `theory.pdf`](./One-star/binary-search/theory.pdf) | [🎯 `problems.pdf`](./One-star/binary-search/problems.pdf) | [💻 `template.cpp`](./One-star/binary-search/template.cpp) |
+| 11 | **Phép toán Bit & Cấu trúc dữ liệu Bitset** | [📖 `theory.pdf`](./One-star/bit-manipulation/theory.pdf) | [🎯 `problems.pdf`](./One-star/bit-manipulation/problems.pdf) | [💻 `template.cpp`](./One-star/bit-manipulation/template.cpp) |
+| 12 | **Lũy thừa nhị phân & Nhân ma trận** | [📖 `theory.pdf`](./One-star/matrix-exponentiation/theory.pdf) | [🎯 `problems.pdf`](./One-star/matrix-exponentiation/problems.pdf) | [💻 `template.cpp`](./One-star/matrix-exponentiation/template.cpp) |
+| 13 | **Thuật toán Sắp xếp & Nghịch thế** | [📖 `theory.pdf`](./One-star/sorting-algorithms/theory.pdf) | [🎯 `problems.pdf`](./One-star/sorting-algorithms/problems.pdf) | [💻 `template.cpp`](./One-star/sorting-algorithms/template.cpp) |
+| 14 | **Ngăn xếp & Ngăn xếp Đơn điệu** | [📖 `theory.pdf`](./One-star/monotonic-stack/theory.pdf) | [🎯 `problems.pdf`](./One-star/monotonic-stack/problems.pdf) | [💻 `template.cpp`](./One-star/monotonic-stack/template.cpp) |
+| 15 | **Danh sách Liên kết & Cấu trúc Động** | [📖 `theory.pdf`](./One-star/linked-list/theory.pdf) | [🎯 `problems.pdf`](./One-star/linked-list/problems.pdf) | [💻 `template.cpp`](./One-star/linked-list/template.cpp) |
+| 16 | **Tập hợp, Ánh xạ & Cây BST Cân bằng** | [📖 `theory.pdf`](./One-star/set-map-bst/theory.pdf) | [🎯 `problems.pdf`](./One-star/set-map-bst/problems.pdf) | [💻 `template.cpp`](./One-star/set-map-bst/template.cpp) |
+| 17 | **Hàng đợi, Deque & Monotonic Queue** | [📖 `theory.pdf`](./One-star/queue-deque/theory.pdf) | [🎯 `problems.pdf`](./One-star/queue-deque/problems.pdf) | [💻 `template.cpp`](./One-star/queue-deque/template.cpp) |
+| 18 | **Hàng đợi Ưu tiên & Cấu trúc Đống (Heap)** | [📖 `theory.pdf`](./One-star/priority-queue-heap/theory.pdf) | [🎯 `problems.pdf`](./One-star/priority-queue-heap/problems.pdf) | [💻 `template.cpp`](./One-star/priority-queue-heap/template.cpp) |
+| 19 | **Kỹ thuật Băm & Phòng chống Anti-Hash** | [📖 `theory.pdf`](./One-star/hashing-techniques/theory.pdf) | [🎯 `problems.pdf`](./One-star/hashing-techniques/problems.pdf) | [💻 `template.cpp`](./One-star/hashing-techniques/template.cpp) |
+| 20 | **Chiến lược Thuật toán: Phân rã & Quy đổi** | [📖 `theory.pdf`](./One-star/problem-reduction/theory.pdf) | [🎯 `problems.pdf`](./One-star/problem-reduction/problems.pdf) | [💻 `template.cpp`](./One-star/problem-reduction/template.cpp) |
 
 ---
 
@@ -40,7 +50,7 @@ Tất cả các tài liệu dưới đây đã được biên dịch hoàn tất
 
 | Cấp độ | Chuyên đề | Trạng thái tài liệu |
 | :---: | :--- | :---: |
-| ⭐ One-star | Cấu trúc dữ liệu nền tảng (DSU, Monotonic Stack/Queue) | ⏳ Đang biên soạn |
+| ⭐ One-star | Cấu trúc Dữ liệu Rời rạc (Disjoint Set Union - DSU) | ⏳ Đang biên soạn |
 | ⭐ One-star | Đồ thị cơ bản (BFS/DFS, Dijkstra, Kruskal) | ⏳ Đang biên soạn |
 | ⭐ One-star | Quy hoạch động cơ bản (Knapsack, LIS, Grid DP) | ⏳ Đang biên soạn |
 | ⭐ One-star | Xử lý xâu cơ bản & Đếm phân phối | ⏳ Đang biên soạn |

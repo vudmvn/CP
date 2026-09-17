@@ -27,6 +27,9 @@ Các Antigravity Skills đã được cấu hình sẵn trong `.agents/skills/` 
 - *"Hãy dùng skill `cp-editorial-generator` để phân tích và viết lời giải chi tiết cho bài toán [Tên bài/Link]."*
 - *"Hãy dùng skill `cp-pdf-exporter` để xuất file PDF cho chuyên đề `One-star/modulo`."* *(Lưu ý: Skill xuất PDF chỉ hoạt động khi có câu lệnh yêu cầu này).*
 
+> [!CAUTION]
+> **Quy định nghiêm ngặt về Git / GitHub**: Trợ lý AI **tuyệt đối KHÔNG tự động commit hoặc push** lên GitHub. Mọi thao tác đồng bộ Git chỉ được phép thực hiện khi người dùng yêu cầu trực tiếp (ví dụ: *"hãy commit và push lên github"*).
+
 ---
 
 ## 2. Chuẩn mực mã nguồn khi AI sinh giải thuật (C++ CP Standard)

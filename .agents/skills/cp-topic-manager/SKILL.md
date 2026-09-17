@@ -69,3 +69,9 @@ Mỗi chuyên đề nằm trong phân cấp tương ứng (ví dụ: `One-star/<
 - Bảng tổng hợp Markdown: Không sử dụng ký tự `|` trần trong công thức toán LaTeX (dùng `\lvert ... \rvert`).
 - Gợi ý tư duy (hints) theo 3 bậc (Cơ bản $\to$ Trung cấp $\to$ Nâng cao).
 - Footer bản quyền kèm bộ 3 logo NEU, FDA và SLSCM.
+
+## 3. Quy định về Git & Quản lý phiên bản (Git Policy)
+- ⛔ **TUYỆT ĐỐI KHÔNG TỰ ĐỘNG COMMIT HOẶC PUSH LÊN GITHUB**:
+  - Không tự ý thực hiện `git add`, `git commit`, `git push` sau khi hoàn thành tạo hoặc cập nhật chuyên đề.
+  - Chỉ thực hiện đẩy code lên GitHub khi người dùng trực tiếp yêu cầu rõ ràng.
+
